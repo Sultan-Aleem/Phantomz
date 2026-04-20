@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+@theme {
+  --color-Mblue-50: var(--Mblue-50);
+  --color-Mblue-100: var(--Mblue-100);
+  --color-Mblue-200: var(--Mblue-200);
+  --color-Mblue-300: var(--Mblue-300);
+  --color-Mblue-400: var(--Mblue-400);
+  --color-Mblue-500: var(--Mblue-500);
+  --color-Mblue-600: var(--Mblue-600);
+  --color-Mblue-700: var(--Mblue-700);
+  --color-Mblue-800: var(--Mblue-800);
+  --color-Mblue-900: var(--Mblue-900);
+
+  --font-sekuya: var(--font-Sekuya);
+  --font-notoserif: var(--font-NotoSerif);
+  --font-josefin: var(--font-josefin);
+}
+
+@layer base {
+  :root {
+    --Mblue-50: #e8f0f6;
+    --Mblue-100: #b9d0e4;
+    --Mblue-200: #97b9d7;
+    --Mblue-300: #6899c5;
+    --Mblue-400: #4a85ba;
+    --Mblue-500: #1d67a9;
+    --Mblue-600: #1a5e9a;
+    --Mblue-700: #154978;
+    --Mblue-800: #10395d;
+    --Mblue-900: #0c2b47;
+
+    --font-Sekuya: "Sekuya", sans-serif;
+    --font-NotoSerif: "NotoSerif", sans-serif;
+    --font-josefin: "josefin", serif;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  @font-face {
+    font-family: "Sekuya";
+    src: url("/Fonts/Sekuya-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "NotoSerif";
+    src: url("/Fonts/NotoSerif-VariableFont_wdth,wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "josefin";
+    src: "/Fonts/JosefinSlab-VariableFont_wght.ttf" format("truetype");
+  }
+}
+
+@utility button-style {
+  @apply rounded-br-xl rounded-tl-xl;
+}
+
+.meteor {
+  box-shadow: 0 0 8px white;
+  filter: blur(0.5px);
+  box-shadow: 0 0 10px white;
+}
