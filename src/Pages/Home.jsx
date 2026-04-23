@@ -1,5 +1,6 @@
 import HeroSection from "../Components/HeroSection";
 import Nav from "../Components/Nav";
+import ProjectsSection from "../Components/ProjectsSection";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <Nav />
       <main>
         <HeroSection />
+        <ProjectsSection />
       </main>
     </div>
   );

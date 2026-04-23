@@ -1,6 +1,6 @@
 import { CgMenuGridO } from "react-icons/cg";
 import { FaRegWindowClose } from "react-icons/fa";
-import NavList from "../lib/info";
+import { NavList } from "../lib/info";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 import gsap from "gsap";
