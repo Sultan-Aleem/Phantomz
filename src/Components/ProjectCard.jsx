@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const ProjectCard = forwardRef(({ project }, ref) => {
   return (
     <div
-      className="flex flex-col gap-y-4 items-center md:items-start "
+      className="flex flex-col gap-y-4 md:gap-y-9 items-center md:items-start "
       ref={ref}
     >
       <div className=" aspect-square items-center ">
@@ -17,7 +17,7 @@ const ProjectCard = forwardRef(({ project }, ref) => {
           transition={{ type: "spring", stiffness: 200, damping: 10 }}
         />
       </div>
-      <h3 className="font-notoserif text-2xl lg:text-3xl text-Mblue-900">
+      <h3 className="font-notoserif text-2xl lg:text-3xl text-Mblue-900 ">
         {project.title}
       </h3>
       <div className="flex flex-col md:flex-row gap-x-3.5   md:w-full gap-y-4 ">
