@@ -7,26 +7,31 @@ const ProjectCard = forwardRef(({ project }, ref) => {
       className="flex flex-col gap-y-4 items-center md:items-start "
       ref={ref}
     >
-      <motion.img
-        src={project.img}
-        alt={project.title}
-        className="object-cover object-center w-[70%] md:w-full aspect-square rounded-t-2xl shadow-2xl"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        transition={{ type: "spring", stiffness: 200, damping: 10 }}
-      />
+      <div className=" aspect-square items-center ">
+        <motion.img
+          src={project.img}
+          alt={project.title}
+          className="object-cover object-center md:w-full  rounded-t-2xl shadow-2xl bg-Mblue-500 mx-auto"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 200, damping: 10 }}
+        />
+      </div>
       <h3 className="font-notoserif text-2xl lg:text-3xl text-Mblue-900">
         {project.title}
       </h3>
-      <div className="flex flex-col md:flex-row gap-x-3  justify-between md:w-full gap-y-4 ">
-        <div className=" md:w-[70%] ">
+      <div className="flex flex-col md:flex-row gap-x-3.5   md:w-full gap-y-4 ">
+        <div className=" md:w-[70%]  flex md:flex-col">
           {project.tech.map((t, index) => (
-            <span key={index} className="text-2xl font-normal pr-2">
+            <span
+              key={index}
+              className=" text-xl md:text-2xl  font-notoserif pr-2 "
+            >
               {t},
             </span>
           ))}
         </div>
-        <div className="flex flex-col gap-y-2 w-full">
+        <div className="flex flex-col gap-y-2 w-full ">
           <motion.a
             target="_blank"
             rel="noopener noreferrer"

@@ -24,7 +24,7 @@ const FeaturedProjectCard = ({ featured }) => {
             target="_blank"
             rel="noopener noreferrer"
             href=""
-            className="bg-Mblue-900 px-2 py-2 text-white text-xl font-notoserif text-center  border border-Mblue-900 pointer hover:bg-transparent hover:text-Mblue-900"
+            className="bg-Mblue-900 px-2 py-2 text-white text-xl font-notoserif text-center  border border-Mblue-900 pointer hover:bg-transparent hover:text-Mblue-900 whitespace-nowrap"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -35,7 +35,7 @@ const FeaturedProjectCard = ({ featured }) => {
             target="_blank"
             rel="noopener noreferrer"
             href=""
-            className="button-style bg-Mblue-400 px-7 py-2 text-white font-notoserif text-xl border border-Mblue-400 pointer hover:bg-transparent hover:text-Mblue-400"
+            className="button-style bg-Mblue-400 px-7 py-2 text-white font-notoserif text-xl border border-Mblue-400 pointer hover:bg-transparent hover:text-Mblue-400 whitespace-nowrap"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}

@@ -65,10 +65,10 @@ const HeroSection = () => {
 
       {/* Desktop Grid */}
 
-      <div className="lg:max-w-8xl grid grid-cols-1 lg:grid-cols-2 z-40 size-full  lg:px-10 gap-y-14">
+      <div className="lg:max-w-8xl grid grid-cols-1 lg:grid-cols-[4fr_2fr] z-40 size-full  lg:px-10 gap-y-14">
         {/* left text */}
         <div
-          className=" lg:w-fit flex flex-col items-center lg:items-start gap-y-3 "
+          className="  lg:w-fit flex flex-col items-center lg:items-start gap-y-3 "
           ref={(el) => (leftIntroRef.current = el)}
         >
           <span className="font-josefin text-black text-xl italic lg:text-xs tracking-wider lg:items-start">
@@ -89,7 +89,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right text */}
-        <div className="flex flex-col justify-between  items-center lg:gap-y-8  gap-y-14">
+        <div className="flex flex-col justify-between  items-center lg:gap-y-8  gap-y-14 ">
           <div
             className="flex flex-col items-start lg:items-end "
             ref={rightParagraphRef}
